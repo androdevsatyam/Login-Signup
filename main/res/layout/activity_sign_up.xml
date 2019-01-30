@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_bg"
+    tools:context="com.example.satyam.codingchallenge.Sign_up"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:onClick="hide">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="109dp"
+        android:layout_height="97dp"
+        android:src="@drawable/logo"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/app_logo"/>
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="281dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="73dp"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="@drawable/form_bg">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/label_userid"
+                style="@style/custom_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:labelFor="@+id/userid"
+                android:text="@string/email"
+                android:onClick="focus"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:ignore="RtlHardcoded"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/userid"
+                style="@style/custom_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label_userid"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="2dp"
+                app:layout_constraintTop_toBottomOf="@+id/label_userid"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintHorizontal_bias="0.0" />
+
+            <TextView
+                android:id="@+id/label_username"
+                style="@style/custom_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/username"
+                android:text="@string/user_name"
+                android:onClick="focus"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:ignore="RtlHardcoded"
+                android:layout_marginTop="2dp"
+                app:layout_constraintTop_toBottomOf="@+id/userid" />
+
+            <EditText
+                android:id="@+id/username"
+                style="@style/custom_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_hint"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="2dp"
+                app:layout_constraintTop_toBottomOf="@+id/label_username"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.0" />
+
+            <TextView
+                android:id="@+id/label_userpass"
+                style="@style/custom_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userid"
+                android:labelFor="@+id/userpass"
+                android:text="@string/password"
+                android:onClick="focus"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:ignore="RtlHardcoded"
+                android:layout_marginTop="2dp"
+                app:layout_constraintTop_toBottomOf="@+id/username" />
+
+            <EditText
+                android:id="@+id/userpass"
+                style="@style/custom_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label_userpass"
+                android:hint="@string/password_hint"
+                android:inputType="textWebPassword"
+                android:maxLength="20"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginTop="2dp"
+                app:layout_constraintTop_toBottomOf="@+id/label_userpass" />
+
+            <TextView
+                android:id="@+id/label_repass"
+                style="@style/custom_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userpass"
+                android:labelFor="@+id/repass"
+                android:text="@string/retype_password"
+                android:onClick="focus"
+                android:layout_marginTop="2dp"
+                app:layout_constraintTop_toBottomOf="@+id/userpass"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/repass"
+                style="@style/custom_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label_repass"
+                android:hint="@string/password_hint"
+                android:inputType="textWebPassword"
+                android:maxLength="20"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="2dp"
+                app:layout_constraintTop_toBottomOf="@+id/label_repass"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="0dp" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:text="@string/sign_up"
+        android:onClick="signup"
+        android:background="@drawable/btn_bg"
+        android:layout_marginLeft="29dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_login"
+        android:layout_marginRight="29dp"
+        app:layout_constraintHorizontal_bias="0.047"
+        android:layout_marginTop="19dp"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/log_in"
+        android:onClick="login"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        android:layout_marginRight="56dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="RtlHardcoded" />
+
+</android.support.constraint.ConstraintLayout>

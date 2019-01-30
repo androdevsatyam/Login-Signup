@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CodingChallenge</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="user_name">User Name</string>
+    <string name="user_hint">Your visible name</string>
+    <string name="email">E-mail</string>
+    <string name="email_hint">Your@gmail.com</string>
+    <string name="password">Password</string>
+    <string name="retype_password">Re-Password</string>
+    <string name="password_hint">........</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="app_logo">logo</string>
+    <string name="error_unexpected">Some issue Occurred!</string>
+
+    <!-- Strings related to login -->
+
+    <string name="emptyError">This field can\'t Empty</string>
+    <string name="invalid_email">This Email is Not valid</string>
+    <string name="invalid_password">This password is too short</string>
+    <string name="passnotmatch">Fill same Passwords</string>
+    <string name="success">Success Logged In</string>
+    <string name="success_signup">Successfully Joined</string>
+    <string name="unsuccess">Bad Crediential</string>
+</resources>
